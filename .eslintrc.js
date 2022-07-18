@@ -16,5 +16,12 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "prettier/prettier": [
+      "off", {
+        "semi": 2,
+        "endOfLine": "auto", // 换行符使用 lf
+        "jsxBracketSameLine": false
+      }
+    ]
   },
 };
